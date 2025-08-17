@@ -1,76 +1,39 @@
-/* Keep the bar clean */
-.site-menu { position: relative; z-index: 2; }
-.site-nav { display: flex; gap: 32px; align-items: center; }
+/* The container for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-/* 2) Keep hover state while moving into the panel (keyboard too) */
-.dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu { display: block; }
-
-/* 3) Remove the gap between trigger and panel */
-.dropdown { position: relative; }
-.dropdown > a { display: block; padding: 8px 6px 10px; }   /* a bit more bottom padding helps */
-.dropdown-menu {
+/* The content that drops down (hidden by default) */
+.dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;          /* sit right under the parent */
-  left: 0;
-  margin-top: 0;      /* IMPORTANT: no margin gap */
-  border-top: 0;      /* avoid 1px gap from border */
-  transform: translateY(-1px); /* tiny overlap so there’s zero gap */
-  min-width: 220px;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 8px 24px rgba(0,0,0,.12);
-  z-index: 9999;
-  white-space: nowrap;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  /* Removes bullet points if you use a <ul> */
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
 }
 
-/* 4) Optional: increase the hover “bridge” even more */
-.dropdown { padding-bottom: 2px; }  /* extends the hover area down a touch */
-
-.dropdown-menu li a {
-  display: block;
-  padding: 8px 12px;
+/* Style for the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
   text-decoration: none;
-}
-.dropdown-menu li a:hover { background: #f3f4f6; }
-
-/* Menu list */
-.nav { list-style: none; margin: 0; padding: 0; display: flex; gap: 32px; }
-.nav > li { position: relative; }
-
-/* Top-level links (no big blue background) */
-.nav > li > a {
   display: block;
-  padding: 8px 6px;
-  text-decoration: none;
-  color: #1e63d0;              /* match your link color */
-  background: transparent;      /* <— important: no blue block */
+  text-align: left;
 }
 
-/* Dropdown panel */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%; left: 0;
-  min-width: 220px;
-  background: #fff;             /* <— separate panel */
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 8px 24px rgba(0,0,0,.12);
-  padding: 6px 0;
-  z-index: 9999;                /* above page content */
-  white-space: nowrap;
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
-/* Show on hover */
-.dropdown:hover .dropdown-menu { display: block; }
-
-/* Items inside dropdown */
-.dropdown-menu li { list-style: none; }
-.dropdown-menu li a {
+/* Show the dropdown menu on hover over the container */
+.dropdown:hover .dropdown-content {
   display: block;
-  padding: 8px 12px;
-  color: #1e63d0;
-  text-decoration: none;
 }
-.dropdown-menu li a:hover { background: #f3f4f6; }

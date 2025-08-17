@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>ACNS 2026: Program</title>
@@ -8,7 +9,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dropdown.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="container">
@@ -23,7 +26,7 @@
     <script>
       fetch("components/menu.html")
         .then(response => response.text())
-        .then(data => {document.getElementById("menu").innerHTML = data;});
+        .then(data => { document.getElementById("menu").innerHTML = data; });
     </script>
   </header>
 
@@ -40,34 +43,13 @@
     </div>
   </div>
   <footer class="site-footer">
-    <!--
-    <div class="container">
-      <div class="row center-align">
-        <p>With the generous support of:</p>
-      </div>
-      <div class="row center-align">
-        <div class="one-third column center-align">
-          <a href="https://www.cs.stonybrook.edu"><img class="logosbu" src="images/SBU_logo_300ppi.png"/></a>
-        </div>
-        <div class="one-third column center-align">
-          <p>Gold Sponsor</p>
-          <a href="https://www.facebook.com"><img class="logofb" src="images/facebook.png"/></a>
-        </div>
-        <div class="one-third column center-align">
-          <p>Gold Sponsor</p>
-          <a href="https://www.antfin.com/"><img class="logofb" src="images/ant_financial.png"/></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <p class="CURRENTDATE">Last updated: March 2024</p>
-        </div>
-        <div class="one-half column">
-          <p class="right-align">© 2024, ACNS 2026 Organizing Committee</p>
-        </div>
-      </div>
-    </div>
-    -->
+    <div id="sponsors"></div>
+    <script>
+      fetch("components/sponsors.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("sponsors").innerHTML = data;});
+    </script>
   </footer>
 </body>
+
 </html>

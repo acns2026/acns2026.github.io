@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>ACNS 2026: Home</title>
@@ -8,7 +9,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dropdown.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="container">
@@ -23,7 +26,7 @@
     <script>
       fetch("components/menu.html")
         .then(response => response.text())
-        .then(data => {document.getElementById("menu").innerHTML = data;});
+        .then(data => { document.getElementById("menu").innerHTML = data; });
     </script>
   </header>
 
@@ -33,7 +36,14 @@
 
       <div class="row">
         <div class="eight columns">
-          <p>The Applied Cryptography and Network Security (ACNS) conference is an annual conference focusing on current developments that advance the areas of applied cryptography, cybersecurity (including network and computer security) and privacy. The goal is to represent both academic research works as well as developments in industrial and technical frontiers. Submissions may focus on the modelling, design, analysis (including security proofs and attacks), development (e.g. implementations), deployment (e.g. system integration), and maintenance (e.g. performance measurements, usability studies) of algorithms, protocols, standards, implementations, technologies devices, systems standing in relation with applied cryptography, cybersecurity and privacy, while advancing or bringing new insights to the state of the art.</p>
+          <p>The Applied Cryptography and Network Security (ACNS) conference is an annual conference focusing on current
+            developments that advance the areas of applied cryptography, cybersecurity (including network and computer
+            security) and privacy. The goal is to represent both academic research works as well as developments in
+            industrial and technical frontiers. Submissions may focus on the modelling, design, analysis (including
+            security proofs and attacks), development (e.g. implementations), deployment (e.g. system integration), and
+            maintenance (e.g. performance measurements, usability studies) of algorithms, protocols, standards,
+            implementations, technologies devices, systems standing in relation with applied cryptography, cybersecurity
+            and privacy, while advancing or bringing new insights to the state of the art.</p>
 
         </div>
         <div class="four columns">
@@ -41,11 +51,14 @@
         </div>
 
       </div>
-      <p>The 2026 edition of ACNS will be held at the <b>SUNY Global Center</b> in New York City. The proceedings of ACNS 2026 will be published as a separate LNCS volume by Springer.</p>
+      <p>The 2026 edition of ACNS will be held at the <b>SUNY Global Center</b> in New York City. The proceedings of
+        ACNS 2026 will be published as a separate LNCS volume by Springer.</p>
       <p></p>
 
       <h2>Important Dates</h2>
-      While taking place at New York, NY during June 22-25, 2026. The ACNS 2026 the conference will have two cycles for paper submissions. The first cycle will be due on September 26, 2025 AoE and the second cycle will be due on January 23, 2026 AoE.
+      While taking place at New York, NY during June 22-25, 2026. The ACNS 2026 the conference will have two cycles for
+      paper submissions. The first cycle will be due on September 26, 2025 AoE and the second cycle will be due on
+      January 23, 2026 AoE.
       <ul>
         <li>Cycle 1 Submission deadline: September 26, 2025 AoE</li>
         <li>Cycle 1 Notification: November 20, 2025 AoE</li>
@@ -61,13 +74,15 @@
       </ul>
     </div>
   </div>
+
   <footer class="site-footer">
     <div id="sponsors"></div>
     <script>
       fetch("components/sponsors.html")
         .then(response => response.text())
-        .then(data => {document.getElementById("sponsors").innerHTML = data;});
+        .then(data => { document.getElementById("sponsors").innerHTML = data; });
     </script>
   </footer>
 </body>
+
 </html>
