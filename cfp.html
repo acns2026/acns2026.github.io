@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>ACNS 2026: Call for Papers</title>
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="css/dropdown.css">
 
 </head>
+
 <body>
   <header class="site-header">
     <div class="container">
@@ -20,29 +22,51 @@
     </div>
   </header>
 
-    <header class="site-menu">
+  <header class="site-menu">
     <div id="menu"></div>
     <script>
       fetch("components/menu.html")
         .then(response => response.text())
-        .then(data => {document.getElementById("menu").innerHTML = data;});
+        .then(data => { document.getElementById("menu").innerHTML = data; });
     </script>
   </header>
 
   <div class="container">
     <div class="page">
       <h2>Call for Papers</h2>
+
       <h3>Important Dates</h3>
-      <ul>
-        <li>Submission deadline: TBA</li>
-        <li>Notification: TBA</li>
-        <li>Camera-ready due: TBA</li>
-        <li>Conference: June 22–25, 2026</li>
-      </ul>
+
+      All deadlines are on the given day, 23:59 AoE (Anywhere on Earth). The submission system opens two weeks before
+      the deadline.
+
+      <ol>
+        <li>First submission cycle dates.
+          <ul>
+            <li>Submission: September 26, 2025 AoE</li>
+            <li>Notification: November 20, 2025 AoE</li>
+            <li>Camera ready: December 15, 2025 AoE</li>
+          </ul>
+        </li>
+
+        <li>Second submission cycle dates.
+          <ul>
+            <li>Submission: January 23, 2026 AoE</li>
+            <li>Notification: March 19, 2026 AoE</li>
+            <li>Camera ready: April 15, 2026 AoE</li>
+          </ul>
+        </li>
+      </ol>
+
       <h3>General Information</h3>
-      <p>The Applied Cryptography and Network Security (ACNS) conference is an annual international conference covering research in theory and applications of information security. ACNS aims to attract high quality papers in all technical aspects of information security. This includes submissions from academia, industry and government on traditional as well as emerging topics and new paradigms in these areas, with a clear connection to real-world problems, systems, or applications.</p>
+      <p>The Applied Cryptography and Network Security (ACNS) conference is an annual international conference covering
+        research in theory and applications of information security. ACNS aims to attract high quality papers in all
+        technical aspects of information security. This includes submissions from academia, industry and government on
+        traditional as well as emerging topics and new paradigms in these areas, with a clear connection to real-world
+        problems, systems, or applications.</p>
       <h3>Types of Submissions Solicited</h3>
-      <p>Papers on all technical aspects of information security and privacy are solicited for submission. Areas of interest include, but are not limited to:</p>
+      <p>Papers on all technical aspects of information security and privacy are solicited for submission. Areas of
+        interest include, but are not limited to:</p>
       <ul>
         <li>Access control</li>
         <li>Accountability</li>
@@ -83,13 +107,25 @@
         <li>Information dissemination control</li>
       </ul>
       <h3>Instructions for Authors</h3>
-      <p>Submissions must be original work and may not be under submission to another venue at the time of review. Submissions are limited to 18 pages in the Springer Lecture Notes in Computer Science (LNCS) style, including bibliography and any appendices; each submission must be intelligible and self-contained within this length.</p>
-      <p>Authors should consult Springer's authors' guidelines and use their proceedings templates, either for LaTeX or for Word, for the preparation of their papers. Springer encourages authors to include their ORCIDs in their papers. In addition, the corresponding author of each paper, acting on behalf of all of the authors of that paper, must complete and sign a Consent-to-Publish form, through which the copyright for their paper is transferred to Springer. The corresponding author signing the copyright form should match the corresponding author marked on the paper. Once the files have been sent to Springer, changes relating to the authorship of the papers cannot be made. Papers should be submitted through the ACNS 2026 submission server (TBA).</p>
-      <p>Each submission must be thoroughly anonymized, with no author names, affiliations, acknowledgements, or obvious references. Submissions must not duplicate work that was published elsewhere, or work that has been submitted in parallel to any other conference, journal or workshop that has proceedings. At least one author of each accepted paper is required to physically present the submitted work at the conference, for the paper to be included in the proceedings.</p>
+      <p>Submissions must be original work and may not be under submission to another venue at the time of review.
+        Submissions are limited to 18 pages in the Springer Lecture Notes in Computer Science (LNCS) style, including
+        bibliography and any appendices; each submission must be intelligible and self-contained within this length.</p>
+      <p>Authors should consult Springer's authors' guidelines and use their proceedings templates, either for LaTeX or
+        for Word, for the preparation of their papers. Springer encourages authors to include their ORCIDs in their
+        papers. In addition, the corresponding author of each paper, acting on behalf of all of the authors of that
+        paper, must complete and sign a Consent-to-Publish form, through which the copyright for their paper is
+        transferred to Springer. The corresponding author signing the copyright form should match the corresponding
+        author marked on the paper. Once the files have been sent to Springer, changes relating to the authorship of the
+        papers cannot be made. Papers should be submitted through the ACNS 2026 submission server (TBA).</p>
+      <p>Each submission must be thoroughly anonymized, with no author names, affiliations, acknowledgements, or obvious
+        references. Submissions must not duplicate work that was published elsewhere, or work that has been submitted in
+        parallel to any other conference, journal or workshop that has proceedings. At least one author of each accepted
+        paper is required to physically present the submitted work at the conference, for the paper to be included in
+        the proceedings.</p>
     </div>
   </div>
   <footer class="site-footer">
-        <div id="sponsors"></div>
+    <div id="sponsors"></div>
     <script>
       fetch("components/sponsors.html")
         .then(response => response.text())
@@ -97,4 +133,5 @@
     </script>
   </footer>
 </body>
+
 </html>
