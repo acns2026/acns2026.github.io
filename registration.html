@@ -17,19 +17,16 @@
       </div>
     </div>
   </header>
+
   <header class="site-menu">
-    <div class="container">
-      <a class="site-menu-leftentry" href="index.html">Home</a>
-      <nav class="site-nav">
-        <a class="page-link" href="cfp.html"><span>CFP</span></a>
-        <a class="page-link" href="program.html"><span>Program</span></a>
-        <a class="page-link" href="registration.html"><span class='active'>Registration</span></a>
-        <a class="page-link" href="venue.html"><span>Venue</span></a>
-        <a class="page-link" href="organization.html"><span>Organization</span></a>
-        <a class="page-link" href="http://jianying.space/acns/" target="_blank"><span>Previous Events</span></a>
-      </nav>
-    </div>
+    <div id="menu"></div>
+    <script>
+      fetch("components/menu.html")
+        .then(response => response.text())
+        .then(data => {document.getElementById("menu").innerHTML = data;});
+    </script>
   </header>
+
   <div class="container">
     <div class="page">
       <h2>Registration</h2>
@@ -85,4 +82,4 @@
     -->
   </footer>
 </body>
-</html> 
+</html>

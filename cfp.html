@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -8,8 +9,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dropdown.css">
 </head>
 <body>
+
   <header class="site-header">
     <div class="container">
       <div class="row">
@@ -17,19 +20,16 @@
       </div>
     </div>
   </header>
+
   <header class="site-menu">
-    <div class="container">
-      <a class="site-menu-leftentry" href="index.html">Home</a>
-      <nav class="site-nav">
-        <a class="page-link" href="cfp.html"><span class='active'>Calls</span></a>
-        <!-- <a class="page-link" href="program.html"><span>Program</span></a> -->
-        <!-- <a class="page-link" href="registration.html"><span>Registration</span></a> -->
-        <a class="page-link" href="venue.html"><span>Venue</span></a>
-        <a class="page-link" href="organization.html"><span>Organization</span></a>
-        <a class="page-link" href="http://jianying.space/acns/" target="_blank"><span>Previous Events</span></a>
-      </nav>
-    </div>
+    <div id="menu"></div>
+    <script>
+      fetch("components/menu.html")
+        .then(response => response.text())
+        .then(data => {document.getElementById("menu").innerHTML = data;});
+    </script>
   </header>
+
   <div class="container">
     <div class="page">
       <h2>Call for Papers</h2>
@@ -57,7 +57,6 @@
 
 
       <h3>General Information</h3>
-
 
       <p>The 24th International Conference on Applied Cryptography and Network Security (ACNS 2026) will be held in NY, United States of America, on 22–25 June 2026. ACNS is an annual conference focusing on current developments that advance the areas of applied cryptography, cyber security (including network and computer security) and privacy. The goal is to present both academic research works and advances on industrial and technical frontiers.</p>
 
