@@ -38,16 +38,3 @@
   display: block;
 }
 
-.site-footer .container {
-    /* Styles moved here to constrain the background */
-    background-color: #2c3e50;
-    color: #ecf0f1;
-
-    /* Existing rules to center and limit width */
-    max-width: 1140px;
-    margin: 0 auto;
-
-    /* Adjusted padding for space inside the colored box */
-    padding: 30px 40px;
-    border-radius: 8px; /* Optional: adds nice rounded corners */
-}

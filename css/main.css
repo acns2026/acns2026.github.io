@@ -247,14 +247,18 @@ a:visited {
 
 /* footer */
 
-.site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 20px 0;
-}
+.site-footer .container {
+  /* Styles moved here to constrain the background */
+  background-color: white;
+  color: #333;
 
-.site-footer p {
-  font-size: 12px;
-  color: #CCC;
+  /* Existing rules to center and limit width */
+  max-width: 840px;
+  margin: 0 auto;
+
+  /* Adjusted padding for space inside the colored box */
+  padding: 30px 40px;
+  border-radius: 8px; /* Optional: adds nice rounded corners */
 }
 
 /* Page styles */
