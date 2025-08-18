@@ -259,6 +259,10 @@ a:visited {
   /* Adjusted padding for space inside the colored box */
   padding: 30px 40px;
   border-radius: 8px; /* Optional: adds nice rounded corners */
+
+  /* Delimiter line between page body and footer */
+  border-top: 2px solid #2567d8;
+  margin-top: 40px;
 }
 
 /* Page styles */
