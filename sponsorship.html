@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ACNS 2026: Sponsorship</title>
+  <meta name="description" content="ACNS 2026 - Applied Cryptography and Network Security">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <img class="header-image u-max-full-width" src="images/banner5.jpg" alt="ACNS 2026, Stony Brook">
+      </div>
+    </div>
+  </header>
+
+  <header class="site-menu">
+    <div id="menu"></div>
+    <script>
+      fetch("components/menu.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("menu").innerHTML = data; });
+    </script>
+  </header>
+
+  <div class="container">
+    <div class="page">
+      <h2>Sponsorship Packages</h2>
+      <p>ACNS welcomes sponsors to support this event. Contact <a href="mailto:nick@cs.stonybrook.edu">Nick
+          Nikiforakis</a> and <a href="mailto:omar@cs.stonybrook.edu">Omar Chowdhury</a> for more information. We offer
+        the following sponsorship packages:</p>
+      <h3>Platinum Sponsorship Package ($5,000)</h3>
+      <ul>
+        <li>Your company logo will be featured as a sponsor on the ACNS 2026 website,</li>
+        <li>Your company will be acknowledged in the conference proceedings,</li>
+        <li>You will be offered an opportunity to include materials or gifts in registration packages,</li>
+        <li>You will be acknowledged in the General Chair's opening remarks,</li>
+        <li>You will be offered space for an exhibit booth,</li>
+        <li>You will be offered two free admissions to the conference, and</li>
+      </ul>
+
+      <h3>Golden Sponsor ($2,500)</h3>
+      <ul>
+        <li>Your company logo will be featured as a sponsor on the ACNS 2026 website,</li>
+        <li>Your company will be acknowledged in the conference proceedings,</li>
+        <li>You will be offered an opportunity to include materials or gifts in registration packages,</li>
+        <li>You will be acknowledged in the General Chair's opening remarks,</li>
+        <li>You will be offered space for an exhibit booth,</li>
+        <li>You will be offered one free admission to the conference.</li>
+      </ul>
+
+      <h3>Silver Sponsor ($1,500)</h3>
+      <ul>
+        <li>Your company logo will be featured as a sponsor on the ACNS 2026 website,</li>
+        <li>Your company will be acknowledged in the conference proceedings,</li>
+        <li>You will be offered an opportunity to include materials or gifts in registration packages.</li>
+      </ul>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div id="sponsors"></div>
+    <script>
+      fetch("components/sponsors.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("sponsors").innerHTML = data; });
+    </script>
+  </footer>
+</body>
+
+</html>
