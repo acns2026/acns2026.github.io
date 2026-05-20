@@ -10,6 +10,96 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/dropdown.css">
+  <style>
+    .program-tabs {
+      display: flex;
+      gap: 4px;
+      margin: 20px 0 0;
+      border-bottom: 2px solid #2567d8;
+    }
+    .tab-btn {
+      padding: 8px 18px;
+      border: 1px solid #ddd;
+      border-bottom: none;
+      background: #f5f5f5;
+      color: #555;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px 4px 0 0;
+    }
+    .tab-btn:hover { background: #e0e8f8; color: #2567d8; }
+    .tab-btn.active { background: #2567d8; color: #fff; border-color: #2567d8; }
+
+    .day-panel { display: none; }
+    .day-panel.active { display: block; }
+
+    .day-theme {
+      font-style: italic;
+      color: #666;
+      margin: 6px 0 16px;
+      font-size: 0.95em;
+    }
+
+    .sched-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+    .sched-table td { padding: 7px 10px; border: 1px solid #e0e0e0; font-size: 0.9em; }
+    .sched-table .time-col { white-space: nowrap; width: 115px; color: #555; font-family: monospace; }
+    .row-opening { background: #e8f4e8; }
+    .row-keynote { background: #e8eefa; }
+    .row-session { background: #f9f9f9; }
+    .row-break   { background: #fafafa; color: #888; }
+    .row-lunch   { background: #fafafa; color: #888; }
+    .row-special { background: #fff8e1; }
+    .row-awards  { background: #f3e8fc; }
+    .row-closing { background: #fce8e8; }
+
+    .keynote-block {
+      margin: 0 0 24px;
+      border: 1px solid #b0c4e8;
+      border-radius: 4px;
+      background: #eef3fc;
+      padding: 14px 18px;
+    }
+    .keynote-block h3 { margin: 0 0 4px; color: #2567d8; font-size: 1.05em; }
+    .keynote-speaker { font-weight: 600; font-size: 1em; color: #333; }
+    .keynote-time { font-size: 0.85em; color: #666; margin-top: 4px; }
+
+    .session-block {
+      margin: 0 0 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .session-header {
+      background: #2567d8;
+      color: white;
+      padding: 9px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .session-header h3 { margin: 0; font-size: 1.0em; font-weight: 600; color: white; }
+    .session-meta { font-size: 0.82em; opacity: 0.85; white-space: nowrap; }
+
+    .paper-table { width: 100%; border-collapse: collapse; }
+    .paper-table tr:nth-child(even) { background: #f5f8ff; }
+    .paper-table td { padding: 7px 10px; border-bottom: 1px solid #eee; font-size: 0.88em; vertical-align: top; }
+    .paper-num { color: #999; width: 34px; text-align: right; padding-right: 12px; white-space: nowrap; }
+
+    .event-block {
+      margin: 0 0 20px;
+      padding: 10px 14px;
+      border-radius: 4px;
+      border-left: 4px solid #ccc;
+      background: #fafafa;
+      font-size: 0.9em;
+    }
+    .event-block.poster  { border-color: #ff9800; background: #fff8f0; }
+    .event-block.dinner  { border-color: #9c27b0; background: #f9f0fc; }
+    .event-block.awards  { border-color: #e91e63; background: #fdf0f4; }
+    .event-block.closing { border-color: #f44336; background: #fdf3f3; }
+  </style>
 </head>
 
 <body>
@@ -33,23 +123,297 @@
   <div class="container">
     <div class="page">
       <h2>Conference Program</h2>
-      <p>The detailed program will be available closer to the conference date.</p>
-      <ul>
-        <li>June 22, 2026 (Day 1): Program details to be announced.</li>
-        <li>June 23, 2026 (Day 2): Program details to be announced.</li>
-        <li>June 24, 2026 (Day 3): Program details to be announced.</li>
-        <li>June 25, 2026 (Day 4): Program details to be announced.</li>
-      </ul>
+      <p>
+        ACNS 2026 will be held <strong>June 22&ndash;25, 2026</strong> at Stony Brook University.
+        The program features <strong>59 papers</strong> across 11 sessions and 3 keynote sessions,
+        plus a poster &amp; networking session. Standard paper presentations are 15 minutes each.
+      </p>
+
+      <div class="program-tabs">
+        <button class="tab-btn active" onclick="showDay('day1', this)">Mon, Jun 22</button>
+        <button class="tab-btn" onclick="showDay('day2', this)">Tue, Jun 23</button>
+        <button class="tab-btn" onclick="showDay('day3', this)">Wed, Jun 24</button>
+        <button class="tab-btn" onclick="showDay('day4', this)">Thu, Jun 25</button>
+      </div>
+
+      <!-- ============================================================ Day 1 -->
+      <div id="day1" class="day-panel active">
+        <h3 style="margin-top:20px;">Day 1 &mdash; Monday, June 22</h3>
+        <p class="day-theme">Opening &middot; Keynote &middot; Post-Quantum Cryptography &middot; Cryptographic Primitives</p>
+
+        <table class="sched-table">
+          <tr class="row-opening"><td class="time-col">08:45&ndash;09:00</td><td><strong>Opening Ceremony</strong> &mdash; General Chairs &amp; PC Chairs</td></tr>
+          <tr class="row-session"><td class="time-col">09:00&ndash;10:30</td><td><strong>Session 1:</strong> Post-Quantum Cryptography</td></tr>
+          <tr class="row-break">  <td class="time-col">10:30&ndash;11:00</td><td>Coffee Break</td></tr>
+          <tr class="row-session"><td class="time-col">11:00&ndash;12:30</td><td><strong>Session 2:</strong> Cryptographic Primitives and Proof Systems I</td></tr>
+          <tr class="row-lunch">  <td class="time-col">12:30&ndash;14:00</td><td>Lunch</td></tr>
+          <tr class="row-keynote"><td class="time-col">14:00&ndash;15:20</td><td><strong>Keynote Session 1:</strong> Elaine Shi (CMU)</td></tr>
+          <tr class="row-special"><td class="time-col">15:20&ndash;16:00</td><td>Coffee Break / <strong>Poster &amp; Networking Session</strong></td></tr>
+          <tr class="row-break">  <td class="time-col">16:00&ndash;17:30</td><td>Workshop / Networking Block</td></tr>
+        </table>
+
+        <div class="keynote-block">
+          <h3>Keynote Session 1</h3>
+          <div class="keynote-speaker">Elaine Shi &mdash; Carnegie Mellon University</div>
+          <div class="keynote-time">14:00&ndash;15:20</div>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 1 &mdash; Post-Quantum Cryptography</h3>
+            <span class="session-meta">09:00&ndash;10:30 &middot; 6 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">1</td><td>Efficient Post-Quantum EPID Signatures From VOLE-in-the-Head</td></tr>
+            <tr><td class="paper-num">2</td><td>The Best of Both KEMs: Securely Combining KEMs in Post-Quantum Hybrid Schemes</td></tr>
+            <tr><td class="paper-num">3</td><td>Highly Scalable Post-Quantum Registration-Based Encryption</td></tr>
+            <tr><td class="paper-num">4</td><td>Dynamic Puncturable Encryption</td></tr>
+            <tr><td class="paper-num">5</td><td>A Post Quantum Vector Commitment Scheme with Efficient Insertions and Deletions</td></tr>
+            <tr><td class="paper-num">6</td><td>(Partially) Blind Signatures from Cryptographic Group Actions</td></tr>
+          </table>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 2 &mdash; Cryptographic Primitives and Proof Systems I</h3>
+            <span class="session-meta">11:00&ndash;12:30 &middot; 6 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">7</td><td>Tight Multi-User Security of CCM and Enhancement by Tag-Based Key Derivation Applied to GCM and CCM</td></tr>
+            <tr><td class="paper-num">8</td><td>FlexProofs: A Vector Commitment with Flexible Linear Time for Computing All Proofs</td></tr>
+            <tr><td class="paper-num">9</td><td>Faster Signature Verification with 3-Dimensional Decomposition</td></tr>
+            <tr><td class="paper-num">10</td><td>Efficient Sum-Check for High-Degree Polynomials</td></tr>
+            <tr><td class="paper-num">11</td><td>Practical Subvector Commitments with Optimal Opening Complexity</td></tr>
+            <tr><td class="paper-num">12</td><td>The Cost of Fluidity: Communication Complexity Trade-offs in Fluid MPC</td></tr>
+          </table>
+        </div>
+
+        <div class="event-block poster">
+          <strong>Poster &amp; Networking Session</strong> &mdash; 15:20&ndash;16:00, during the afternoon coffee break.
+        </div>
+      </div>
+
+      <!-- ============================================================ Day 2 -->
+      <div id="day2" class="day-panel">
+        <h3 style="margin-top:20px;">Day 2 &mdash; Tuesday, June 23</h3>
+        <p class="day-theme">Keynote &middot; Privacy &middot; Blockchain &middot; AI and ML Security &middot; Social Dinner</p>
+
+        <table class="sched-table">
+          <tr class="row-keynote"><td class="time-col">09:00&ndash;10:20</td><td><strong>Keynote Session 2:</strong> Vitaly Shmatikov (Cornell Tech)</td></tr>
+          <tr class="row-break">  <td class="time-col">10:20&ndash;10:50</td><td>Coffee Break</td></tr>
+          <tr class="row-session"><td class="time-col">11:10&ndash;12:40</td><td><strong>Session 3:</strong> Privacy-Enhancing Technologies I</td></tr>
+          <tr class="row-lunch">  <td class="time-col">12:40&ndash;14:00</td><td>Lunch</td></tr>
+          <tr class="row-session"><td class="time-col">14:00&ndash;15:30</td><td><strong>Session 4:</strong> Blockchain and Decentralized Security</td></tr>
+          <tr class="row-break">  <td class="time-col">15:30&ndash;16:00</td><td>Coffee Break</td></tr>
+          <tr class="row-session"><td class="time-col">16:00&ndash;17:30</td><td><strong>Session 5:</strong> AI and ML Security I</td></tr>
+          <tr class="row-special"><td class="time-col">Evening</td><td><strong>ACNS Social Dinner</strong> (time TBA)</td></tr>
+        </table>
+
+        <div class="keynote-block">
+          <h3>Keynote Session 2</h3>
+          <div class="keynote-speaker">Vitaly Shmatikov &mdash; Cornell Tech</div>
+          <div class="keynote-time">09:00&ndash;10:20</div>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 3 &mdash; Privacy-Enhancing Technologies I</h3>
+            <span class="session-meta">11:10&ndash;12:40 &middot; 6 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">13</td><td>TAPIR: A Two-Server Authenticated PIR Scheme with Preprocessing</td></tr>
+            <tr><td class="paper-num">14</td><td>BI-ORAM: An Oblivious Bulk-Insertion Log Table</td></tr>
+            <tr><td class="paper-num">15</td><td>Automatic Teller Machines for Offline Ecash</td></tr>
+            <tr><td class="paper-num">16</td><td>NEPAL: Climbing Beyond the Limits of Graph Matching Attacks in Privacy-Preserving Record Linkage</td></tr>
+            <tr><td class="paper-num">17</td><td>Towards Privacy-Preserving Federated Learning using Hybrid Homomorphic Encryption</td></tr>
+            <tr><td class="paper-num">18</td><td>FedFDP: Fairness-Aware Federated Learning with Differential Privacy</td></tr>
+          </table>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 4 &mdash; Blockchain and Decentralized Security</h3>
+            <span class="session-meta">14:00&ndash;15:30 &middot; 6 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">19</td><td>Stealth and Beyond: Attribute-Driven Accountability in Bitcoin Transactions</td></tr>
+            <tr><td class="paper-num">20</td><td>OptiBridge: A Trustless, Cost-Efficient Bridge Between the Lightning Network and Ethereum</td></tr>
+            <tr><td class="paper-num">21</td><td>$2B Lessons: Brigade as a Defense Against Real-World DeFi Bridge Exploits</td></tr>
+            <tr><td class="paper-num">22</td><td>Visibility-Aware GHOST: Mitigating Visibility Asymmetry in Subtree-Based Proof-of-Work Consensus</td></tr>
+            <tr><td class="paper-num">23</td><td>Crypto-Asset Collateralised Loans in Open Finance via Robust Fully Homomorphic Encryption</td></tr>
+            <tr><td class="paper-num">24</td><td>X-CHAIN: Enhancing Electronic Supply Chain Security with 3D X-ray Inspection and Blockchain Integration</td></tr>
+          </table>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 5 &mdash; AI and ML Security I</h3>
+            <span class="session-meta">16:00&ndash;17:30 &middot; 6 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">25</td><td>SoK: A Taxonomy of Attacks and Defenses in Split Learning</td></tr>
+            <tr><td class="paper-num">26</td><td>SoK: Benchmark Datasets for Evaluating AI Safety &mdash; Gaps Between Guidelines and Practice</td></tr>
+            <tr><td class="paper-num">27</td><td>From Sands to Mansions: Actionable, Customizable, and Causality-Preserving Cyberattack Emulation with LLM-Powered Symbolic Planning</td></tr>
+            <tr><td class="paper-num">28</td><td>ChatIoT: Large Language Model-Based Security Assistant for Internet of Things with RAG</td></tr>
+            <tr><td class="paper-num">29</td><td>A Theoretical Framework for the Security of Multi-Stage LLM Output Filtering Pipelines</td></tr>
+            <tr><td class="paper-num">30</td><td>Adaptive Randomized Smoothing with Certified Robustness for Mitigating Tabular Adversarial Attacks</td></tr>
+          </table>
+        </div>
+
+        <div class="event-block dinner">
+          <strong>ACNS Social Dinner</strong> &mdash; Evening (time and venue TBA).
+        </div>
+      </div>
+
+      <!-- ============================================================ Day 3 -->
+      <div id="day3" class="day-panel">
+        <h3 style="margin-top:20px;">Day 3 &mdash; Wednesday, June 24</h3>
+        <p class="day-theme">Keynote &middot; Systems &middot; Privacy and Identity &middot; Advanced Cryptography &middot; ACNS Awards</p>
+
+        <table class="sched-table">
+          <tr class="row-keynote"><td class="time-col">09:00&ndash;10:20</td><td><strong>Keynote Session 3:</strong> Dan Guido (CEO, Trail of Bits)</td></tr>
+          <tr class="row-break">  <td class="time-col">10:20&ndash;10:50</td><td>Coffee Break</td></tr>
+          <tr class="row-session"><td class="time-col">11:10&ndash;12:40</td><td><strong>Session 6:</strong> Systems and Network Security</td></tr>
+          <tr class="row-lunch">  <td class="time-col">12:40&ndash;14:00</td><td>Lunch</td></tr>
+          <tr class="row-session"><td class="time-col">14:00&ndash;15:30</td><td><strong>Session 7:</strong> Privacy, Authentication, and Digital Identity</td></tr>
+          <tr class="row-break">  <td class="time-col">15:30&ndash;16:00</td><td>Coffee Break</td></tr>
+          <tr class="row-session"><td class="time-col">16:00&ndash;17:30</td><td><strong>Session 8:</strong> Advanced Cryptographic Foundations and Protocols</td></tr>
+          <tr class="row-awards"> <td class="time-col">17:30&ndash;17:40</td><td><strong>ACNS Awards</strong></td></tr>
+        </table>
+
+        <div class="keynote-block">
+          <h3>Keynote Session 3</h3>
+          <div class="keynote-speaker">Dan Guido &mdash; CEO, Trail of Bits</div>
+          <div class="keynote-time">09:00&ndash;10:20</div>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 6 &mdash; Systems and Network Security</h3>
+            <span class="session-meta">11:10&ndash;12:40 &middot; 6 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">31</td><td>Topology-Hiding Path Validation for Large-Scale Quantum Key Distribution Networks</td></tr>
+            <tr><td class="paper-num">32</td><td>Photons Are Perfect, Protocols Are Not: Cracking QKD BBM92 via the Internet</td></tr>
+            <tr><td class="paper-num">33</td><td>FivGeeFuzz: Authorization-Aware API Fuzzing of 5G Core Service-Based Interfaces</td></tr>
+            <tr><td class="paper-num">34</td><td>ICSBoM: Uncovering Hidden Supply Chain Vulnerabilities in ICS Firmware</td></tr>
+            <tr><td class="paper-num">35</td><td>Deception by Design: A Configurable Platform for Flexible Cyber Deception Strategy Testing and Evaluation</td></tr>
+            <tr><td class="paper-num">36</td><td>Firmware Transparency: Strengthening Security Guarantees Against Bootloader-Targeting Attacks</td></tr>
+          </table>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 7 &mdash; Privacy, Authentication, and Digital Identity</h3>
+            <span class="session-meta">14:00&ndash;15:30 &middot; 6 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">37</td><td>PrivSpike: A Privacy-Preserving Inference Framework for Deep Spiking Neural Networks using Homomorphic Encryption</td></tr>
+            <tr><td class="paper-num">38</td><td>Fully Encrypted Machine Learning Training Using Function-Hiding Functional Encryption</td></tr>
+            <tr><td class="paper-num">39</td><td>Policy-Based Access Tokens: Privacy-Preserving Verification for Digital Identity</td></tr>
+            <tr><td class="paper-num">40</td><td>Efficient Aggregate Anonymous Credentials for Decentralized Identity</td></tr>
+            <tr><td class="paper-num">41</td><td>The Cryptographic Layer of Biometric Authentication</td></tr>
+            <tr><td class="paper-num">42</td><td>PPMLAuth: Privacy-Preserving and Tamper-Resistant Behavioral Authentication</td></tr>
+          </table>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 8 &mdash; Advanced Cryptographic Foundations and Protocols</h3>
+            <span class="session-meta">16:00&ndash;17:30 &middot; 6 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">43</td><td>Protecting Quantum Circuits Through Compiler-Resistant Obfuscation</td></tr>
+            <tr><td class="paper-num">44</td><td>Practice-Oriented Instances of Deterministic LPN</td></tr>
+            <tr><td class="paper-num">45</td><td>How to Kickstart <em>F</em><sub>smt</sub> with Short Authentication Strings and Out-Of-Band Communication</td></tr>
+            <tr><td class="paper-num">46</td><td>Sovereign Flexibly Accountable Functional Signatures</td></tr>
+            <tr><td class="paper-num">47</td><td>Practical Zero-Trust Threshold Signatures in Large-Scale Asynchronous Networks</td></tr>
+            <tr><td class="paper-num">48</td><td>(Re-)Formalization and Construction of Reusable and Robust Threshold Fuzzy Extractors</td></tr>
+          </table>
+        </div>
+
+        <div class="event-block awards">
+          <strong>ACNS Awards</strong> &mdash; 17:30&ndash;17:40, following Session 8.
+        </div>
+      </div>
+
+      <!-- ============================================================ Day 4 -->
+      <div id="day4" class="day-panel">
+        <h3 style="margin-top:20px;">Day 4 &mdash; Thursday, June 25</h3>
+        <p class="day-theme">Cryptanalysis &middot; Secure Protocols &middot; AI Robustness &middot; Systems Security &middot; Closing</p>
+
+        <table class="sched-table">
+          <tr class="row-session"><td class="time-col">09:00&ndash;10:30</td><td><strong>Session 9:</strong> Cryptanalysis and Secure Protocols</td></tr>
+          <tr class="row-break">  <td class="time-col">10:30&ndash;11:00</td><td>Coffee Break</td></tr>
+          <tr class="row-session"><td class="time-col">11:00&ndash;11:30</td><td><strong>Session 10:</strong> AI Robustness and Neural Distinguishers</td></tr>
+          <tr class="row-lunch">  <td class="time-col">11:30&ndash;13:00</td><td>Lunch</td></tr>
+          <tr class="row-session"><td class="time-col">13:00&ndash;14:00</td><td><strong>Session 11:</strong> Implementation, Exfiltration, and Systems Security</td></tr>
+          <tr class="row-closing"><td class="time-col">14:00&ndash;14:10</td><td><strong>Closing Remarks</strong></td></tr>
+        </table>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 9 &mdash; Cryptanalysis and Secure Protocols</h3>
+            <span class="session-meta">09:00&ndash;10:30 &middot; 5 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">49</td><td>Improving Correlation Power Analysis on Masked CRYSTALS-Kyber with Lattice Attack</td></tr>
+            <tr><td class="paper-num">51</td><td>Related-Key Cryptanalysis of FUTURE</td></tr>
+            <tr><td class="paper-num">55</td><td>SoK: Outsourced Private Set Intersection</td></tr>
+            <tr><td class="paper-num">56</td><td>Updatable Private Set Intersection and Beyond: Efficient Constructions via Circuit PSI</td></tr>
+            <tr><td class="paper-num">57</td><td>Round-Optimal Privacy Preserving Authenticated Key Exchange Even for Incomplete Sessions</td></tr>
+          </table>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 10 &mdash; AI Robustness and Neural Distinguishers</h3>
+            <span class="session-meta">11:00&ndash;11:30 &middot; 2 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">53</td><td>RLND: A ResNet and LSTM Based Neural Distinguisher for Lightweight Block Ciphers</td></tr>
+            <tr><td class="paper-num">54</td><td>Understanding the Robustness of BERT Models Against Hardware Errors: An Experimental Study</td></tr>
+          </table>
+        </div>
+
+        <div class="session-block">
+          <div class="session-header">
+            <h3>Session 11 &mdash; Implementation, Exfiltration, and Systems Security</h3>
+            <span class="session-meta">13:00&ndash;14:00 &middot; 4 papers &middot; 15 min each</span>
+          </div>
+          <table class="paper-table">
+            <tr><td class="paper-num">50</td><td>High-Throughput Side-Channel-Protected Stream Cipher Hardware for 6G Systems</td></tr>
+            <tr><td class="paper-num">52</td><td>OverHear: Headphone-Based Multi-Sensor Keystroke Inference</td></tr>
+            <tr><td class="paper-num">58</td><td>Adversarial DNS Exfiltration: Framework and Defense Evaluation</td></tr>
+            <tr><td class="paper-num">59</td><td>RESPEC-CFA: Representation-Aware Speculative Control Flow Attestation</td></tr>
+          </table>
+        </div>
+
+        <div class="event-block closing">
+          <strong>Closing Remarks</strong> &mdash; 14:00&ndash;14:10, following Session 11.
+        </div>
+      </div>
+
     </div>
   </div>
+
   <footer class="site-footer">
     <div id="sponsors"></div>
     <script>
       fetch("components/sponsors.html")
         .then(response => response.text())
-        .then(data => { document.getElementById("sponsors").innerHTML = data;});
+        .then(data => { document.getElementById("sponsors").innerHTML = data; });
     </script>
   </footer>
+
+  <script>
+    function showDay(dayId, btn) {
+      document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(dayId).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
 </body>
 
 </html>
