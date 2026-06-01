@@ -11,7 +11,7 @@
   - Privacy-enhancing technologies: Tuesday and Wednesday
   - AI and machine learning security: Tuesday, Wednesday, and Thursday
   - Systems and network security: Wednesday
-- Poster/networking is scheduled during the Monday afternoon coffee break.
+- Poster/networking is scheduled during the extended Monday afternoon coffee/networking block.
 
 ---
 
@@ -26,8 +26,7 @@
 | 10:50-12:20 | **Session 1: Post-Quantum Cryptography** |
 | 12:20-14:00 | Lunch |
 | 14:00-15:30 | **Session 2: Cryptographic Primitives and Proof Systems I** |
-| 15:30-16:00 | Coffee Break / **Poster & Networking Session** |
-| 16:00-17:30 | Workshop / Networking Block |
+| 15:30-17:30 | Coffee Break / **Poster & Networking Session** |
 
 ---
 
@@ -116,6 +115,7 @@
 
 | Time | Event |
 |------|-------|
+| 08:45-09:00 | **ACNS Awards** (General Chairs & PC Chairs) |
 | 09:00-10:30 | **Session 6: Systems and Network Security** |
 | 10:30-11:00 | Coffee Break |
 | 11:00-12:30 | **Session 7: Privacy, Authentication, and Digital Identity** |
@@ -232,7 +232,7 @@
 |-----|------|----------|--------|-------|
 | 1 | Mon Jun 22 | S1-S2 | 12 | Opening ceremony + Keynote 1 + Poster/networking |
 | 2 | Tue Jun 23 | S3-S5 | 18 | Keynote 2 + Social Dinner |
-| 3 | Wed Jun 24 | S6-S9 | 22 | Late-afternoon implementation and systems security session |
+| 3 | Wed Jun 24 | S6-S9 | 22 | ACNS Awards + late-afternoon implementation and systems security session |
 | 4 | Thu Jun 25 | S10-S11 | 7 | Keynote 3 + Closing remarks |
 
 ## Proceedings Section Coverage
