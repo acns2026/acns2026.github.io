@@ -4,13 +4,13 @@
 
 - Standard paper presentations are scheduled for 15 minutes.
 - The program follows the updated daily outline in `daily_schedule.csv`.
-- Sessions 1-8 contain 6 papers each; Thursday is split into three shorter sessions of 5, 2, and 4 papers.
+- Sessions 1-8 contain 6 papers each; Wednesday ends with a shorter 4-paper session, and Thursday has two shorter sessions of 5 and 2 papers.
 - Split topical areas are scheduled on different dates where feasible:
   - Post-quantum cryptography: Monday and Wednesday
   - Cryptographic primitives/protocols: Monday, Wednesday, and Thursday
   - Privacy-enhancing technologies: Tuesday and Wednesday
-  - AI and machine learning security: Tuesday and Thursday
-  - Systems and network security: Wednesday and Thursday
+  - AI and machine learning security: Tuesday, Wednesday, and Thursday
+  - Systems and network security: Wednesday
 - Poster/networking is scheduled during the Monday afternoon coffee break.
 
 ---
@@ -21,18 +21,18 @@
 | Time | Event |
 |------|-------|
 | 08:45-09:00 | **Opening Ceremony** (General Chairs & PC Chairs) |
-| 09:00-10:30 | **Session 1: Post-Quantum Cryptography** |
-| 10:30-11:00 | Coffee Break |
-| 11:00-12:30 | **Session 2: Cryptographic Primitives and Proof Systems I** |
-| 12:30-14:00 | Lunch |
-| 14:00-15:20 | **Keynote Session 1:** Elaine Shi (CMU) |
-| 15:20-16:00 | Coffee Break / **Poster & Networking Session** |
+| 09:00-10:20 | **Keynote Session 1:** Dan Guido (CEO, Trail of Bits) |
+| 10:20-10:50 | Coffee Break |
+| 10:50-12:20 | **Session 1: Post-Quantum Cryptography** |
+| 12:20-14:00 | Lunch |
+| 14:00-15:30 | **Session 2: Cryptographic Primitives and Proof Systems I** |
+| 15:30-16:00 | Coffee Break / **Poster & Networking Session** |
 | 16:00-17:30 | Workshop / Networking Block |
 
 ---
 
 ### Session 1 - Post-Quantum Cryptography
-*6 papers · 09:00-10:30 · 15 min each*
+*6 papers · 10:50-12:20 · 15 min each*
 
 | # | Paper | Vol. § |
 |---|-------|--------|
@@ -44,7 +44,7 @@
 | 6 | (Partially) Blind Signatures from Cryptographic Group Actions | 16571 §1 |
 
 ### Session 2 - Cryptographic Primitives and Proof Systems I
-*6 papers · 11:00-12:30 · 15 min each*
+*6 papers · 14:00-15:30 · 15 min each*
 
 | # | Paper | Vol. § |
 |---|-------|--------|
@@ -112,23 +112,22 @@
 ---
 
 ## Day 3 - Wednesday, June 24
-*Theme: Keynote · Systems · Privacy and Identity · Advanced Cryptography*
+*Theme: Systems · Privacy and Identity · Advanced Cryptography*
 
 | Time | Event |
 |------|-------|
-| 09:00-10:20 | **Keynote Session 3:** Dan Guido (CEO, Trail of Bits) |
-| 10:20-10:50 | Coffee Break |
-| 11:10-12:40 | **Session 6: Systems and Network Security** |
-| 12:40-14:00 | Lunch |
-| 14:00-15:30 | **Session 7: Privacy, Authentication, and Digital Identity** |
+| 09:00-10:30 | **Session 6: Systems and Network Security** |
+| 10:30-11:00 | Coffee Break |
+| 11:00-12:30 | **Session 7: Privacy, Authentication, and Digital Identity** |
+| 12:30-14:00 | Lunch |
+| 14:00-15:30 | **Session 8: Advanced Cryptographic Foundations and Protocols** |
 | 15:30-16:00 | Coffee Break |
-| 16:00-17:30 | **Session 8: Advanced Cryptographic Foundations and Protocols** |
-| 17:30-17:40 | **ACNS Awards** |
+| 16:00-17:00 | **Session 9: Implementation, Exfiltration, and Systems Security** |
 
 ---
 
 ### Session 6 - Systems and Network Security
-*6 papers · 11:10-12:40 · 15 min each*
+*6 papers · 09:00-10:30 · 15 min each*
 
 | # | Paper | Vol. § |
 |---|-------|--------|
@@ -140,7 +139,7 @@
 | 36 | Firmware Transparency: Strengthening Security Guarantees Against Bootloader-Targeting Attacks | 16573 §9 |
 
 ### Session 7 - Privacy, Authentication, and Digital Identity
-*6 papers · 14:00-15:30 · 15 min each*
+*6 papers · 11:00-12:30 · 15 min each*
 
 | # | Paper | Vol. § |
 |---|-------|--------|
@@ -152,35 +151,46 @@
 | 42 | PPMLAuth: Privacy-Preserving and Tamper-Resistant Behavioral Authentication | 16572 §5 |
 
 ### Session 8 - Advanced Cryptographic Foundations and Protocols
-*6 papers · 16:00-17:30 · 15 min each*
+*6 papers · 14:00-15:30 · 15 min each*
 
 | # | Paper | Vol. § |
 |---|-------|--------|
 | 43 | Protecting Quantum Circuits Through Compiler-Resistant Obfuscation | 16571 §1 |
 | 44 | Practice-Oriented Instances of Deterministic LPN | 16571 §2 |
 | 45 | How to Kickstart $\mathcal{F}_\text{smt}$ with Short Authentication Strings and Out-Of-Band Communication | 16571 §3 |
-| 46 | Sovereign Flexibly Accountable Functional Signatures | 16571 §3 |
+| 46 | Sovereign Modal Signature | 16571 §3 |
 | 47 | Practical Zero-Trust Threshold Signatures in Large-Scale Asynchronous Networks | 16571 §3 |
 | 48 | (Re-)Formalization and Construction of Reusable and Robust Threshold Fuzzy Extractors | 16572 §5 |
+
+### Session 9 - Implementation, Exfiltration, and Systems Security
+*4 papers · 16:00-17:00 · 15 min each*
+
+| # | Paper | Vol. § |
+|---|-------|--------|
+| 50 | High-Throughput Side-Channel-Protected Stream Cipher Hardware for 6G Systems | 16573 §8 |
+| 52 | OverHear: Headphone-Based Multi-Sensor Keystroke Inference | 16573 §8 |
+| 58 | Adversarial DNS Exfiltration: Framework and Defense Evaluation | 16573 §7 |
+| 59 | RESPEC-CFA: Representation-Aware Speculative Control Flow Attestation | 16573 §9 |
+
 
 ---
 
 ## Day 4 - Thursday, June 25
-*Theme: Cryptanalysis · Secure Protocols · AI Robustness · Systems Security · Closing*
+*Theme: Keynote · Cryptanalysis · Secure Protocols · AI Robustness · Closing*
 
 | Time | Event |
 |------|-------|
-| 09:00-10:30 | **Session 9: Cryptanalysis and Secure Protocols** |
-| 10:30-11:00 | Coffee Break |
-| 11:00-11:30 | **Session 10: AI Robustness and Neural Distinguishers** |
-| 11:30-13:00 | Lunch |
-| 13:00-14:00 | **Session 11: Implementation, Exfiltration, and Systems Security** |
+| 09:00-10:20 | **Keynote Session 3:** Elaine Shi (CMU) |
+| 10:20-10:50 | Coffee Break |
+| 10:50-12:20 | **Session 10: Cryptanalysis and Secure Protocols** |
+| 12:20-13:30 | Lunch |
+| 13:30-14:00 | **Session 11: AI Robustness and Neural Distinguishers** |
 | 14:00-14:10 | **Closing Remarks** |
 
 ---
 
-### Session 9 - Cryptanalysis and Secure Protocols
-*5 papers · 09:00-10:30 · 15 min each*
+### Session 10 - Cryptanalysis and Secure Protocols
+*5 papers · 10:50-12:20 · 15 min each*
 
 | # | Paper | Vol. § |
 |---|-------|--------|
@@ -190,23 +200,14 @@
 | 56 | Updatable Private Set Intersection and Beyond: Efficient Constructions via Circuit PSI | 16571 §3 |
 | 57 | Round-Optimal Privacy Preserving Authenticated Key Exchange Even for Incomplete Sessions | 16571 §3 |
 
-### Session 10 - AI Robustness and Neural Distinguishers
-*2 papers · 11:00 -11:30 · 15 min each*
+### Session 11 - AI Robustness and Neural Distinguishers
+*2 papers · 13:30-14:00 · 15 min each*
 
 | # | Paper | Vol. § |
 |---|-------|--------|
 | 53 | RLND: A ResNet and LSTM Based Neural Distinguisher for Lightweight Block Ciphers | 16573 §7 |
 | 54 | Understanding the Robustness of BERT Models Against Hardware Errors: An Experimental Study | 16573 §7 |
 
-### Session 11 - Implementation, Exfiltration, and Systems Security
-*4 papers · 13:00-2:00 · 15 min each*
-
-| # | Paper | Vol. § |
-|---|-------|--------|
-| 50 | High-Throughput Side-Channel-Protected Stream Cipher Hardware for 6G Systems | 16573 §8 |
-| 52 | OverHear: Headphone-Based Multi-Sensor Keystroke Inference | 16573 §8 |
-| 58 | Adversarial DNS Exfiltration: Framework and Defense Evaluation | 16573 §7 |
-| 59 | RESPEC-CFA: Representation-Aware Speculative Control Flow Attestation | 16573 §9 |
 
 ---
 
@@ -214,16 +215,16 @@
 
 | Topic | Day 1 | Day 2 | Day 3 | Day 4 |
 |-------|:-----:|:-----:|:-----:|:-----:|
-| Keynotes | K1 | K2 | K3 | - |
+| Keynotes | K1 | K2 | - | K3 |
 | Post-Quantum Cryptography | S1 | - | S8 | - |
 | Cryptographic Primitives and Proof Systems | S2 | - | S8 | - |
-| Secure Protocols and Multi-Party Computation | - | - | S8 | S9 |
+| Secure Protocols and Multi-Party Computation | - | - | S8 | S10 |
 | Privacy-Enhancing Technologies | - | S3 | S7 | - |
 | Authentication and Digital Identity | - | - | S7/S8 | - |
 | Blockchain and Decentralized Security | - | S4 | - | - |
-| AI and Machine Learning Security | - | S5 | - | S10/S11 |
-| Cryptanalysis and Physical Attacks | - | - | - | S9/S11 |
-| Systems and Network Security | - | - | S6 | S11 |
+| AI and Machine Learning Security | - | S5 | S9 | S11 |
+| Cryptanalysis and Physical Attacks | - | - | S9 | S10 |
+| Systems and Network Security | - | - | S6/S9 | - |
 
 ## Papers Per Day
 
@@ -231,8 +232,8 @@
 |-----|------|----------|--------|-------|
 | 1 | Mon Jun 22 | S1-S2 | 12 | Opening ceremony + Keynote 1 + Poster/networking |
 | 2 | Tue Jun 23 | S3-S5 | 18 | Keynote 2 + Social Dinner |
-| 3 | Wed Jun 24 | S6-S8 | 18 | Keynote 3 + ACNS Awards |
-| 4 | Thu Jun 25 | S9-S11 | 11 | Coffee break and lunch between shorter paper sessions |
+| 3 | Wed Jun 24 | S6-S9 | 22 | Late-afternoon implementation and systems security session |
+| 4 | Thu Jun 25 | S10-S11 | 7 | Keynote 3 + Closing remarks |
 
 ## Proceedings Section Coverage
 
@@ -240,10 +241,10 @@
 |--------------------|--------|--------|------------------|
 | §1 Post-Quantum Cryptography | 16571 | 7 | S1 (6) + S8 (1) |
 | §2 Cryptographic Primitives and Proof Systems | 16571 | 7 | S2 (6) + S8 (1) |
-| §3 Secure Protocols and Multi-Party Computation | 16571 | 6 | S8 (3) + S9 (3) |
+| §3 Secure Protocols and Multi-Party Computation | 16571 | 6 | S8 (3) + S10 (3) |
 | §4 Privacy-Enhancing Technologies | 16572 | 8 | S3 (6) + S7 (2) |
 | §5 Authentication and Digital Identity | 16572 | 5 | S7 (4) + S8 (1) |
 | §6 Blockchain and Decentralized Security | 16572 | 6 | S4 (6) |
-| §7 AI and Machine Learning Security | 16573 | 9 | S5 (6) + S10 (2) + S11 (1) |
-| §8 Cryptanalysis and Physical Attacks | 16573 | 4 | S9 (2) + S11 (2) |
-| §9 Systems and Network Security | 16573 | 7 | S6 (6) + S11 (1) |
+| §7 AI and Machine Learning Security | 16573 | 9 | S5 (6) + S9 (1) + S11 (2) |
+| §8 Cryptanalysis and Physical Attacks | 16573 | 4 | S9 (2) + S10 (2) |
+| §9 Systems and Network Security | 16573 | 7 | S6 (6) + S9 (1) |
