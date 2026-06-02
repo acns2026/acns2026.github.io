@@ -12,6 +12,7 @@
   - AI and machine learning security: Tuesday, Wednesday, and Thursday
   - Systems and network security: Wednesday
 - Poster/networking is scheduled during the extended Monday afternoon coffee/networking block.
+- Remote presentations are marked *(remote)* and scheduled at the end of their respective sessions.
 
 ---
 
@@ -35,12 +36,12 @@
 
 | # | Paper | Vol. § |
 |---|-------|--------|
-| 1 | Efficient Post-Quantum EPID Signatures From VOLE-in-the-Head | 16571 §1 |
 | 2 | The Best of Both KEMs: Securely Combining KEMs in Post-Quantum Hybrid Schemes | 16571 §1 |
 | 3 | Highly Scalable Post-Quantum Registration-Based Encryption | 16571 §1 |
 | 4 | Dynamic Puncturable Encryption | 16571 §1 |
 | 5 | A Post Quantum Vector Commitment Scheme with Efficient Insertions and Deletions | 16571 §1 |
 | 6 | (Partially) Blind Signatures from Cryptographic Group Actions | 16571 §1 |
+| 1 | Efficient Post-Quantum EPID Signatures From VOLE-in-the-Head *(remote)* | 16571 §1 |
 
 ### Session 2 - Cryptographic Primitives and Proof Systems I
 *6 papers · 14:00-15:30 · 15 min each*
@@ -50,9 +51,9 @@
 | 7 | Tight Multi-User Security of CCM and Enhancement by Tag-Based Key Derivation Applied to GCM and CCM | 16571 §2 |
 | 8 | FlexProofs: A Vector Commitment with Flexible Linear Time for Computing All Proofs | 16571 §2 |
 | 9 | Faster Signature Verification with 3-Dimensional Decomposition | 16571 §2 |
-| 10 | Efficient Sum-Check for High-Degree Polynomials | 16571 §2 |
 | 11 | Practical Subvector Commitments with Optimal Opening Complexity | 16571 §2 |
 | 12 | The Cost of Fluidity: Communication Complexity Trade-offs in Fluid MPC | 16571 §2 |
+| 10 | Efficient Sum-Check for High-Degree Polynomials *(remote)* | 16571 §2 |
 
 ---
 
@@ -89,12 +90,12 @@
 
 | # | Paper | Vol. § |
 |---|-------|--------|
-| 19 | Stealth and Beyond: Attribute-Driven Accountability in Bitcoin Transactions | 16572 §6 |
 | 20 | OptiBridge: A Trustless, Cost-Efficient Bridge Between the Lightning Network and Ethereum | 16572 §6 |
 | 21 | $2B Lessons: Brigade as a Defense Against Real-World DeFi Bridge Exploits | 16572 §6 |
-| 22 | Visibility-Aware GHOST: Mitigating Visibility Asymmetry in Subtree-Based Proof-of-Work Consensus | 16572 §6 |
 | 23 | Crypto-Asset Collateralised Loans in Open Finance via Robust Fully Homomorphic Encryption | 16572 §6 |
 | 24 | X-CHAIN: Enhancing Electronic Supply Chain Security with 3D X-ray Inspection and Blockchain Integration | 16572 §6 |
+| 19 | Stealth and Beyond: Attribute-Driven Accountability in Bitcoin Transactions *(remote)* | 16572 §6 |
+| 22 | Visibility-Aware GHOST: Mitigating Visibility Asymmetry in Subtree-Based Proof-of-Work Consensus *(remote)* | 16572 §6 |
 
 ### Session 5 - AI and ML Security I
 *6 papers · 16:00-17:30 · 15 min each*
@@ -143,12 +144,12 @@
 
 | # | Paper | Vol. § |
 |---|-------|--------|
-| 37 | PrivSpike: A Privacy-Preserving Inference Framework for Deep Spiking Neural Networks using Homomorphic Encryption | 16572 §4 |
 | 38 | Fully Encrypted Machine Learning Training Using Function-Hiding Functional Encryption | 16572 §4 |
 | 39 | Policy-Based Access Tokens: Privacy-Preserving Verification for Digital Identity | 16572 §5 |
 | 40 | Efficient Aggregate Anonymous Credentials for Decentralized Identity | 16572 §5 |
 | 41 | The Cryptographic Layer of Biometric Authentication | 16572 §5 |
 | 42 | PPMLAuth: Privacy-Preserving and Tamper-Resistant Behavioral Authentication | 16572 §5 |
+| 37 | PrivSpike: A Privacy-Preserving Inference Framework for Deep Spiking Neural Networks using Homomorphic Encryption *(remote)* | 16572 §4 |
 
 ### Session 8 - Advanced Cryptographic Foundations and Protocols
 *6 papers · 14:00-15:30 · 15 min each*
@@ -157,20 +158,20 @@
 |---|-------|--------|
 | 43 | Protecting Quantum Circuits Through Compiler-Resistant Obfuscation | 16571 §1 |
 | 44 | Practice-Oriented Instances of Deterministic LPN | 16571 §2 |
-| 45 | How to Kickstart $\mathcal{F}_\text{smt}$ with Short Authentication Strings and Out-Of-Band Communication | 16571 §3 |
 | 46 | Sovereign Modal Signature | 16571 §3 |
 | 47 | Practical Zero-Trust Threshold Signatures in Large-Scale Asynchronous Networks | 16571 §3 |
 | 48 | (Re-)Formalization and Construction of Reusable and Robust Threshold Fuzzy Extractors | 16572 §5 |
+| 45 | How to Kickstart $\mathcal{F}_\text{smt}$ with Short Authentication Strings and Out-Of-Band Communication *(remote)* | 16571 §3 |
 
 ### Session 9 - Implementation, Exfiltration, and Systems Security
 *4 papers · 16:00-17:00 · 15 min each*
 
 | # | Paper | Vol. § |
 |---|-------|--------|
-| 50 | High-Throughput Side-Channel-Protected Stream Cipher Hardware for 6G Systems | 16573 §8 |
 | 52 | OverHear: Headphone-Based Multi-Sensor Keystroke Inference | 16573 §8 |
 | 58 | Adversarial DNS Exfiltration: Framework and Defense Evaluation | 16573 §7 |
 | 59 | RESPEC-CFA: Representation-Aware Speculative Control Flow Attestation | 16573 §9 |
+| 50 | High-Throughput Side-Channel-Protected Stream Cipher Hardware for 6G Systems *(remote)* | 16573 §8 |
 
 
 ---
@@ -205,8 +206,8 @@
 
 | # | Paper | Vol. § |
 |---|-------|--------|
-| 53 | RLND: A ResNet and LSTM Based Neural Distinguisher for Lightweight Block Ciphers | 16573 §7 |
 | 54 | Understanding the Robustness of BERT Models Against Hardware Errors: An Experimental Study | 16573 §7 |
+| 53 | RLND: A ResNet and LSTM Based Neural Distinguisher for Lightweight Block Ciphers *(remote)* | 16573 §7 |
 
 
 ---
