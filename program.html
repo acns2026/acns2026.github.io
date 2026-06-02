@@ -788,7 +788,15 @@
       document.getElementById(dayId).classList.add('active');
       btn.classList.add('active');
     }
-  </script>
+
+    const validDays = ['day1', 'day2', 'day3', 'day4'];
+    const hash = location.hash.slice(1);
+    if (validDays.includes(hash)) {
+      const idx = validDays.indexOf(hash);
+      const btn = document.querySelectorAll('.tab-btn')[idx];
+      showDay(hash, btn);
+    }
+</script>
 </body>
 
 </html>
