@@ -62,6 +62,13 @@
     .keynote-block h3 { margin: 0 0 4px; color: #2567d8; font-size: 1.05em; }
     .keynote-speaker { font-weight: 600; font-size: 1em; color: #333; }
     .keynote-time { font-size: 0.85em; color: #666; margin-top: 4px; }
+    .keynote-body { display: flex; gap: 16px; margin-top: 10px; align-items: flex-start; }
+    .keynote-photo { flex: 0 0 110px; }
+    .keynote-photo img { width: 110px; height: 110px; object-fit: cover; border-radius: 4px; border: 1px solid #ccc; }
+    .keynote-details { flex: 1; }
+    .keynote-title { font-style: italic; font-weight: 600; color: #2567d8; margin-bottom: 6px; font-size: 0.95em; }
+    .keynote-abstract { font-size: 0.88em; color: #444; margin-bottom: 6px; }
+    .keynote-bio { font-size: 0.85em; color: #666; border-top: 1px solid #d0d8f0; padding-top: 6px; margin-top: 6px; }
 
     .session-block {
       margin: 0 0 20px;
@@ -285,6 +292,24 @@
           <h3>Keynote Session 2</h3>
           <div class="keynote-speaker">Vitaly Shmatikov &mdash; Cornell Tech</div>
           <div class="keynote-time">09:00&ndash;10:20</div>
+          <div class="keynote-body">
+            <div class="keynote-photo">
+              <img src="images/vitaly.jpg" alt="Vitaly Shmatikov">
+            </div>
+            <div class="keynote-details">
+              <div class="keynote-title">The Road to Hell Is Paved with Helpful Agents</div>
+              <div class="keynote-abstract">
+                As AI models grow more powerful, agentic systems become more helpful and capable of performing complex tasks with Web use, computer use, code generation, and other tools. They adapt in response to errors and tool failures, re-plan, and discover creative ways to fulfill users&rsquo; requests.
+                <br><br>
+                I will explain how this combination of helpfulness and adaptive re-planning opens the door to control-flow hijacking in multi-agent systems, why these attacks succeed even if the underlying models are safety-aligned, and why defenses such as agentic firewalls and runtime alignment checks do not help. I will then introduce accidental &ldquo;meltdowns,&rdquo; where helpful agentic systems engage in destructive and adversarial behavior in response to environmental errors (e.g., temporarily inaccessible web pages and missing files), in the absence of any adversarial inputs.
+                <br><br>
+                Joint work with Rishi Jha, Hal Triedman, Arka Bhattacharya, and Justin Wagle.
+              </div>
+              <div class="keynote-bio">
+                <strong>Bio:</strong> Vitaly Shmatikov is a Professor of Computer Science at Cornell University and Cornell Tech. Before Cornell, he worked at the University of Texas at Austin and SRI International. His research has been recognized by three Awards for Outstanding Research in Privacy Enhancing Technologies, five Test-of-Time Awards from IEEE S&amp;P, ACM CCS, and ACM/IEEE LICS, as well as outstanding and distinguished paper awards from USENIX Security 2021 and 2024 and EMNLP 2023.
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="session-block">
