@@ -22,7 +22,7 @@
 | Time | Event |
 |------|-------|
 | 08:45-09:00 | **Opening Ceremony** (General Chairs & PC Chairs) |
-| 09:00-10:20 | **Keynote Session 1:** Dan Guido (CEO, Trail of Bits) |
+| 09:00-10:20 | **Keynote Session 1:** [TBD] |
 | 10:20-10:50 | Coffee Break |
 | 10:50-12:20 | **Session 1: Post-Quantum Cryptography** |
 | 12:20-14:00 | Lunch |
