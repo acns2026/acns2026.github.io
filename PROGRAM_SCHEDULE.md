@@ -37,7 +37,7 @@
 | # | Paper | Vol. § |
 |---|-------|--------|
 | 2 | The Best of Both KEMs: Securely Combining KEMs in Post-Quantum Hybrid Schemes | 16571 §1 |
-| 3 | Highly Scalable Post-Quantum Registration-Based Encryption | 16571 §1 |
+| 3 | Towards More Efficient Registration-Based Encryption from LWE | 16571 §1 |
 | 4 | Dynamic Puncturable Encryption | 16571 §1 |
 | 5 | A Post Quantum Vector Commitment Scheme with Efficient Insertions and Deletions | 16571 §1 |
 | 6 | (Partially) Blind Signatures from Cryptographic Group Actions | 16571 §1 |
