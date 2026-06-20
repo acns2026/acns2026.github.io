@@ -1,6 +1,19 @@
-# Working/source files for program planning — not part of the published site
+# Working/source files for program planning (not part of the published site)
 ACNS2026_Session_Chair_Final.docx
 ACNS2026_Session_Chair_Signup.docx
 make_chair_signup.py
-remote_presentations_schedule.xlsx
+*remote_presentations_schedule.xlsx
 PROGRAM_SCHEDULE.md
+
+# Submission & PC analysis (contains confidential peer-review data; never publish)
+analysis/
+
+# Python environments
+venv/
+.venv-plot/
+.venv/
+
+# Notebooks and OS / editor cruft
+*.ipynb
+.ipynb_checkpoints/
+.DS_Store
