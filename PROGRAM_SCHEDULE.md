@@ -122,29 +122,28 @@
 | Time | Event |
 |------|-------|
 | 09:00-09:15 | **ACNS Awards** (General Chairs & PC Chairs) |
-| 09:15-10:15 | **Session 7: Systems and Network Security II** |
-| 10:15-10:45 | Coffee Break |
-| 10:45-12:15 | **Session 8: Privacy, Authentication, and Digital Identity** |
-| 12:15-14:00 | Lunch |
-| 14:00-15:30 | **Session 9: Advanced Cryptographic Foundations and Protocols** |
-| 15:30-16:00 | Coffee Break |
-| 16:00-17:00 | **Session 10: Implementation, Exfiltration, and Systems Security** |
+| 09:15-10:00 | **Session 7: Systems and Network Security II** |
+| 10:00-10:30 | Coffee Break |
+| 10:30-12:00 | **Session 8: Privacy, Authentication, and Digital Identity** |
+| 12:00-13:45 | Lunch |
+| 13:45-15:15 | **Session 9: Advanced Cryptographic Foundations and Protocols** |
+| 15:15-15:45 | Coffee Break |
+| 15:45-17:00 | **Session 10: Implementation, Exfiltration, and Systems Security** |
 
 ---
 
 ### Session 7 - Systems and Network Security II
-*4 papers · 09:15-10:15 · 15 min each*
+*4 papers · 09:15-10:00 · 15 min each*
 **Chair:** Charalampos Katsis (Palo Alto Networks)
 
 | # | Paper | Vol. § |
 |---|-------|--------|
 | 35 | Deception by Design: A Configurable Platform for Flexible Cyber Deception Strategy Testing and Evaluation | 16573 §9 |
-| 54 | Understanding the Robustness of BERT Models Against Hardware Errors: An Experimental Study | 16573 §7 |
 | 36 | Firmware Transparency: Strengthening Security Guarantees Against Bootloader-Targeting Attacks *(remote)* | 16573 §9 |
 | 53 | RLND: A ResNet and LSTM Based Neural Distinguisher for Lightweight Block Ciphers *(remote)* | 16573 §7 |
 
 ### Session 8 - Privacy, Authentication, and Digital Identity
-*6 papers · 10:45-12:15 · 15 min each*
+*6 papers · 10:30-12:00 · 15 min each*
 **Chair:** Thomas Lorünser (AIT Austrian Institute of Technology)
 
 | # | Paper | Vol. § |
@@ -157,7 +156,7 @@
 | 37 | PrivSpike: A Privacy-Preserving Inference Framework for Deep Spiking Neural Networks using Homomorphic Encryption | 16572 §4 |
 
 ### Session 9 - Advanced Cryptographic Foundations and Protocols
-*6 papers · 14:00-15:30 · 15 min each*
+*6 papers · 13:45-15:15 · 15 min each*
 **Chair:** Serge Vaudenay (EPFL)
 
 | # | Paper | Vol. § |
@@ -170,7 +169,7 @@
 | 45 | How to Kickstart $\mathcal{F}_\text{smt}$ with Short Authentication Strings and Out-Of-Band Communication *(remote)* | 16571 §3 |
 
 ### Session 10 - Implementation, Exfiltration, and Systems Security
-*4 papers · 16:00-17:00 · 15 min each*
+*5 papers · 15:45-17:00 · 15 min each*
 **Chair:** Charalampos Katsis (Palo Alto Networks)
 
 | # | Paper | Vol. § |
@@ -179,6 +178,7 @@
 | 58 | Adversarial DNS Exfiltration: Framework and Defense Evaluation | 16573 §7 |
 | 59 | RESPEC-CFA: Representation-Aware Speculative Control Flow Attestation | 16573 §9 |
 | 50 | High-Throughput Side-Channel-Protected Stream Cipher Hardware for 6G Systems *(remote)* | 16573 §8 |
+| 54 | Understanding the Robustness of BERT Models Against Hardware Errors: An Experimental Study | 16573 §7 |
 
 
 ---
