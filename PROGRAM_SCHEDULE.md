@@ -71,7 +71,7 @@
 | 14:00-15:30 | **Session 5: Blockchain and Decentralized Security** |
 | 15:30-16:00 | Coffee Break |
 | 16:00-17:30 | **Session 6: AI and ML Security I** |
-| TBA | **ACNS Social Dinner** |
+| TBA | **ACNS Social Dinner** (Danfords, Port Jefferson) |
 
 ---
 
