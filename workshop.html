@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ACNS 2026: Workshops</title>
+  <meta name="description" content="ACNS 2026 - Applied Cryptography and Network Security">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+  <style>
+    .ws-day {
+      margin: 26px 0 10px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #2567d8;
+      color: #2567d8;
+    }
+
+    .ws-card {
+      margin: 0 0 16px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .ws-header {
+      background: #2567d8;
+      color: #fff;
+      padding: 10px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .ws-header h3 { margin: 0; font-size: 1.0em; font-weight: 600; color: #fff; }
+    .ws-header h3 a { color: #fff; text-decoration: none; }
+    .ws-header h3 a:hover { text-decoration: underline; }
+    .ws-time { font-size: 0.85em; opacity: 0.9; white-space: nowrap; font-family: monospace; }
+
+    .ws-body { padding: 10px 14px; font-size: 0.9em; }
+    .ws-chairs { color: #444; }
+    .ws-note { color: #777; font-size: 0.85em; margin-top: 4px; }
+    .ws-link { display: inline-block; margin-top: 8px; color: #2567d8; font-weight: 600; font-size: 0.85em; text-decoration: none; }
+    .ws-link:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <img class="u-max-full-width header-image" src="images/banner5.jpg" alt="ACNS 2026, Stony Brook">
+      </div>
+    </div>
+  </header>
+
+  <header class="site-menu">
+    <div id="menu"></div>
+    <script>
+      fetch("components/menu.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("menu").innerHTML = data; });
+    </script>
+  </header>
+
+  <div class="container">
+    <div class="page">
+      <h2>Workshops</h2>
+      <p>
+        ACNS 2026 hosts <strong>six workshops</strong> running in parallel with the main conference on
+        <strong>June 23&ndash;24, 2026</strong> at Stony Brook University. Each workshop maintains its own
+        detailed talk-by-talk schedule; follow the links below for the full program of each.
+        See also the <a href="workshops.html">Call for Workshops</a> page for organizer details.
+      </p>
+
+      <!-- ===================================================== Tuesday, June 23 -->
+      <h3 class="ws-day">Tuesday, June 23</h3>
+
+      <div class="ws-card">
+        <div class="ws-header">
+          <h3><a href="https://nextg-sec.github.io/program.html" target="_blank">Workshop on NextG Networks Cryptography and Security (NextG-Sec)</a></h3>
+          <span class="ws-time">09:00&ndash;17:20</span>
+        </div>
+        <div class="ws-body">
+          <div class="ws-chairs">Chairs: Imtiaz Karim, Moti Yung</div>
+          <a class="ws-link" href="https://nextg-sec.github.io/program.html" target="_blank">Full program &rarr;</a>
+        </div>
+      </div>
+
+      <div class="ws-card">
+        <div class="ws-header">
+          <h3><a href="https://aiots26.github.io/main//" target="_blank">8th International Workshop on Artificial Intelligence and Industrial IoT Security (AIoTS)</a></h3>
+          <span class="ws-time">11:10&ndash;12:35</span>
+        </div>
+        <div class="ws-body">
+          <div class="ws-chairs">Chairs: Sudipta Chattopadhyay, Zeyu Yang</div>
+          <div class="ws-note">15 minutes per talk, including 3 minutes of Q&amp;A.</div>
+          <a class="ws-link" href="https://aiots26.github.io/main//" target="_blank">Full program &rarr;</a>
+        </div>
+      </div>
+
+      <div class="ws-card">
+        <div class="ws-header">
+          <h3><a href="https://acns-isc.github.io/2026/program.html" target="_blank">1st ACNS Workshop on Intelligent and Secure Computing (ACNS-ISC)</a></h3>
+          <span class="ws-time">11:10&ndash;17:00</span>
+        </div>
+        <div class="ws-body">
+          <div class="ws-chairs">Chairs: Kuo-Hui Yeh, Chia-Mu Yu, Chunhua Su</div>
+          <a class="ws-link" href="https://acns-isc.github.io/2026/program.html" target="_blank">Full program &rarr;</a>
+        </div>
+      </div>
+
+      <!-- ===================================================== Wednesday, June 24 -->
+      <h3 class="ws-day">Wednesday, June 24</h3>
+
+      <div class="ws-card">
+        <div class="ws-header">
+          <h3><a href="https://simlaacns.github.io/contents/program.html" target="_blank">8th International Workshop on Security in Machine Learning and its Applications (SiMLA)</a></h3>
+          <span class="ws-time">09:00&ndash;16:45</span>
+        </div>
+        <div class="ws-body">
+          <div class="ws-chairs">Chairs: Leo Zhang, Yifeng Zheng, Fuyi Wang</div>
+          <a class="ws-link" href="https://simlaacns.github.io/contents/program.html" target="_blank">Full program &rarr;</a>
+        </div>
+      </div>
+
+      <div class="ws-card">
+        <div class="ws-header">
+          <h3><a href="http://aihws2026.aisylab.com/" target="_blank">7th International Workshop on Artificial Intelligence in Hardware Security (AIHWS)</a></h3>
+          <span class="ws-time">09:00&ndash;16:45</span>
+        </div>
+        <div class="ws-body">
+          <div class="ws-chairs">Chairs: Lejla Batina, Shivam Bhasin, Stjepan Picek</div>
+          <a class="ws-link" href="http://aihws2026.aisylab.com/" target="_blank">Full program &rarr;</a>
+        </div>
+      </div>
+
+      <div class="ws-card">
+        <div class="ws-header">
+          <h3><a href="https://cimss2026.github.io/program" target="_blank">6th International Workshop on Critical Infrastructure and Maritime Systems Security (CIMSS)</a></h3>
+          <span class="ws-time">14:00&ndash;17:00</span>
+        </div>
+        <div class="ws-body">
+          <div class="ws-chairs">Chairs: Awais Yousaf, Victor Bolbot</div>
+          <a class="ws-link" href="https://cimss2026.github.io/program" target="_blank">Full program &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div id="sponsors"></div>
+    <script>
+      fetch("components/sponsors.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("sponsors").innerHTML = data; });
+    </script>
+  </footer>
+</body>
+
+</html>
